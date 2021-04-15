@@ -1,0 +1,90 @@
+.main{
+    height:100vh;
+    background-repeat: unset;
+    margin: 0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex: 0.2;
+    /* display: inline; */
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    color: rgb(218, 109, 131);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-style: initial;
+    font-weight: 100;
+  
+
+}
+li{display: flex;
+    display: inline;
+    flex-direction: row;
+    color: black;
+    list-style: none;
+    justify-content: space-between;
+    font-size: medium;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.signupbutton{
+    color: rgb(134, 26, 47); ;
+    margin: 10px ;
+    outline: none;
+    border-style: none;
+    padding: 10px 50px 10px 50px;
+    border-radius: 15px;
+    cursor: pointer; 
+    display: inline-block;
+    position:relative;
+  position: relative;
+  transition: 0.5s;
+  box-shadow: 2px -2px 4px 2px grey ;
+  border-top: teal;
+      border-left: teal;
+      border-right: teal;
+
+}
+input{
+    margin: 10px ;
+    outline: none;
+    border-style: none;
+    padding: 15px 5px 15px 5px;
+    border-radius: 20px;
+    cursor: pointer; 
+    display: inline-block;
+  box-shadow: 2px -2px 4px 2px grey ;
+  border-top: teal;
+      border-right: teal;
+      padding-inline-start: 75vh;
+      padding-inline-end: 75vh;
+
+}
+.bottomdiv{
+    display: flex;
+    flex: 0.8;
+    height: 100vh;
+    background-image:url('../../Myproject/Images/beads\ from\ nature.jpeg');
+    background-repeat: unset;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+h3{
+    margin-left: 180px;
+    margin-right: 180px;
+   
+   
+}

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-group{
+    display: flex;
+    margin: 10px;
+}
+button{
+    padding: 5px 20px;
+    border: none;
+    background-color: rgb(20, 18, 18);
+    color: white;
+    cursor: pointer;
+}
+
+input{
+    outline: none;
+    padding: 5px;
+}
+.buttonlogin{
+    
+}
