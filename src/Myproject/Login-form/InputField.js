@@ -1,18 +1,16 @@
 
-
 function InputField(props){
     return(
-        <div className="form-group">
+        
+        <div >
         <label>{props.label}</label>
         <input 
         type={props.type} 
         placeholder={props.placeholder} 
-        name={props.name}
         onChange={props.onchange}
-        className="form-control"/>
+        className={props.className}
+                />
       </div>
-
-
 
 
     )
