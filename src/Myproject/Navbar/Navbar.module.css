@@ -1,16 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+/* 
 .main{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-size: cover;
-  background-image: url('../Images/alfonso-scarpa-LP870ZV5GzI-unsplash.jpg');
-
+  height: 100vh; 
+  background-size: cover; 
+   background-image: url('../Images/alfonso-scarpa-LP870ZV5GzI-unsplash.jpg'); 
 }
 
 .heading {
@@ -21,10 +17,11 @@
   align-items: center;
   font-family: "Quicksand", sans-serif;
   font-size: 42px;
+  background-color: chartreuse;
  
 }
 
-.look {
+ .look {
   margin: 0 15px;
   line-height: 0.7;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
@@ -35,7 +32,7 @@
   display: inline-flex;
   height: 30px;
   width: 27px;
-  /* border: 2.5px solid #FF1EAD; */
+  
    border: 2.35px solid black;
   border-radius: 14px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.75), inset 0 0 2px rgba(0, 0, 0, 0.45);
@@ -61,14 +58,13 @@
   100% {
     width: 30vw;
   }
-}
+} 
 
 .nav{
   display: flex;
 flex: 0.1;
   flex: column;
-  
-  
+   
 }
 .lists{
   display: flex;
@@ -95,11 +91,112 @@ flex: 0.1;
     color: aliceblue;
    
   } 
+  
+  .introtext{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+  } */
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .main{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('../Images/alfonso-scarpa-LP870ZV5GzI-unsplash.jpg');
+    background-size: cover;
+    margin-bottom: 60px;
+  }
+  
+  .heading {
+    display: flex;
+    flex: 0.1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 42px;
+    
+   
+  }
+  .look {
+    margin: 0 15px;
+    line-height: 0.7;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+    
+    animation: span 3s ease-in infinite alternate;
+  }
+  .letter {
+    display: inline-flex;
+    height: 30px;
+    width: 27px;
+    
+     border: 2.35px solid black;
+    border-radius: 14px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75), inset 0 0 2px rgba(0, 0, 0, 0.45);
+  
+    animation: letter 3s ease-in-out infinite alternate;
+  }
+  @keyframes span {
+    0%,
+    30% {
+      margin: 0 15px;
+    }
+    70%,
+    100% {
+      margin: 0 5px;
+    }
+  }
+  @keyframes letter {
+    0%,
+    30% {
+      width: 27px;
+    }
+    70%,
+    100% {
+      width: 30vw;
+    }
+  } 
+  .nav{display: flex;
+    flex: 0.1;
+    justify-content: center;
+
+  }
+  .lists{
+    display: flex;
+    list-style: none;
+    
+  }
+  .linkscart {
+      margin-right: 30px;
+      margin-left: 30px;
+      color: orange;
+      
+     
+    }
+    .linksproducts {
+      margin-right: 30px;
+      color: orange;
+     
+    }
+    .linkscatalogue {
+      margin-right: 30px;
+      color: orange;
+      
+    }
+    .linkstrending {
+      margin-right: 30px;
+      color: orange;
+     
+    } 
   .text{
     display: flex;
-    flex-direction: column;
     flex: 0.8;
-    color: white;
-    font-size: xx-large;
-    margin: 50px 20px;
+align-items: center;
+font-size: xx-large;
+color: white;
   }

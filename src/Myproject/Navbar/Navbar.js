@@ -2,11 +2,11 @@ import React from "react";
 import navbarstyle from "../Navbar/Navbar.module.css";
 import { Box } from "@chakra-ui/react";
 
-function Navbar() {
+function Navbar({login ,signup}) {
   return (
     <div className={navbarstyle.main}>
       <div className={navbarstyle.heading}>
-        <span className={navbarstyle.look}>K</span>
+         <span className={navbarstyle.look}>K</span>
         <span>A</span>
         <span>Y</span>
         <span>N</span>
@@ -16,11 +16,11 @@ function Navbar() {
         <span>L</span>
         <span className={navbarstyle.letter}></span>
         <span>O</span>
-        <span>K</span>
+        <span>K</span> 
       </div>
 
       <div className={navbarstyle.nav}>
-      <li className={navbarstyle.lists}>
+       <li className={navbarstyle.lists}>
         <a href="#" className={navbarstyle.linkscart}>
           {" "}
           CART{" "}
@@ -48,14 +48,14 @@ function Navbar() {
       <li className={navbarstyle.lists}>
         {" "}
         <Box
-          // onClick={signup}
+          onClick={signup}
           as="button"
           p={4}
           color="white"
           fontWeight="bold"
           textTransform="uppercase"
           margin=" 10px"
-          padding="10px 20px"
+          padding="2px 10px"
           textAlign=" center"
           transition="0.5s"
           backgroundSize=" 200% auto"
@@ -73,7 +73,7 @@ function Navbar() {
       <li className={navbarstyle.lists}>
         {" "}
         <Box
-          // onClick={login}
+          onClick={login}
           as="button"
           p={4}
           color="white"
@@ -81,7 +81,7 @@ function Navbar() {
           borderRadius="md"
           textTransform="uppercase"
           margin=" 10px"
-          padding="10px 20px"
+          padding="2px 10px"
           textAlign=" center"
           transition="0.5s"
           backgroundSize=" 200% auto"
@@ -96,10 +96,10 @@ function Navbar() {
         >
           Login
         </Box>{" "}
-      </li>
+      </li> 
       </div>
       <div className={navbarstyle.text}>
-        <h2>A Multi-Vendor E-commerce site to get your fashion materials ready for work. </h2>
+          <h2 className={navbarstyle.introtext}>A Multi-Vendor E-commerce site <br/> to get your fashion materials<br/>ready for work. </h2>  
       </div>
     </div>
   );
