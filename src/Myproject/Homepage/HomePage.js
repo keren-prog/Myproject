@@ -1,8 +1,5 @@
 import style from "./HomePage.module.css";
-import signupstyle from "../Signup-form/Signup.module.css";
 import { useHistory } from "react-router-dom";
-import { Box, Text } from "@chakra-ui/react";
-import { link } from "react-router-dom";
 import Navbar from '../Navbar/Navbar'
 import Cards from '../Cards/Cards'
 
@@ -23,22 +20,7 @@ function HomePage() {
     
          <Navbar login={login} signup={signup} />
          <Cards/>
-        
-              {/* <div className={style.searchContainer}>
-                <i className={style.searchIcon}> </i>
-                <input
-                  className={style.searchBox}
-                  type="search"
-                  name="search"
-                  placeholder="Search..."
-                />
-                <input
-                  type="submit"
-                  value="Search"
-                  className={style.searchButton}
-                /> */}
-            
-    
+      
 
         <div className={style.quotediv}>
            <section className={style.quote1}>

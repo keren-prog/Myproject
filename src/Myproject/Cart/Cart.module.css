@@ -1,0 +1,178 @@
+
+
+
+
+.main{
+    display: flex;
+    height: 100vh;
+flex-direction: column;
+}
+
+.cart{
+    display: flex;
+    background-color:  #4b5b63;
+    flex: 0.2;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: honeydew;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-stretch: ultra-expanded;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.6;
+    flex-direction: row;
+  
+    
+}
+.pimage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.4;
+  box-shadow: 2px 2px 4px 2px rgb(24, 16, 5);
+  background-size: 30px 50px;
+  margin-top: 40px;
+  
+  
+}
+
+
+.ptext{
+  display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0.4;
+    flex-direction: column;
+    
+  
+}
+.pbutton{
+  background-color: #cad9e0;
+  color:  #4b5b63;
+  width: 100px;
+
+}
+
+
+
+/* Apply Ghana cedis  */
+.product .pprice:before, .product .pline:before, .tvalue:before {
+  content: 'GH₵';
+}
+
+
+
+
+.checkout {
+    display: flex;
+    flex: 0.2;
+  float: right;
+  margin-top: 10px;
+  padding: 2px ;
+  background-color: #4b5b63;
+  color: honeydew;
+  font-size: 10px;
+  border-radius: 10px;
+  width: 80px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.checkout:hover {
+  background-color: #494;
+}
+
+/* Make adjustments for tablet */
+@media screen and (max-width: 650px) {
+  
+  .cart {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid color-border;
+  }
+  
+  .labels {
+    display: none;
+  }
+  
+  .image {
+    float: right;
+    width: auto;
+  }
+    img {
+      margin: 0 0 10px 10px;
+    }
+  
+  
+  .pdetails {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+  
+  .pprice {
+    clear: both;
+    width: 70px;
+  }
+  
+  .pquantity {
+    width: 100px;
+  }
+    input {
+      margin-left: 20px;
+    }
+  
+  
+  .pquantity:before {
+    content: 'x';
+  }
+  
+  .premoval {
+    width: auto;
+  }
+  
+  .pine {
+    float: right;
+    width: 70px;
+  }
+  
+}
+
+
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+  
+  .product-removal {
+    float: right;
+  }
+  
+  .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+  
+  .product .product-line-price:before {
+    content: 'Item Total: GH₵ ';
+  }
+  
+  .totals {
+    .totals-item {
+      label {
+        width: 60%;
+      }
+      
+      .totals-value {
+        width: 40%;
+      }
+    }
+  }
+}

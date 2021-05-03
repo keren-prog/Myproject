@@ -6,6 +6,7 @@ import PaymentForm from './paymentform/PaymentForm'
 import Navbar from './Navbar/Navbar'
 import Cards from './Cards/Cards'
 import ProductList from './Productlist/ProductList'
+import Cart from './Cart/Cart'
 
 
 
@@ -19,6 +20,7 @@ const ApplicationRoutes = () => {
              < Route exact path="/paymentform" component={PaymentForm}/> 
              < Route exact path="/productlist" component={ ProductList}/>
              < Route exact path="/navbar" component={ Navbar} />
+             < Route exact path="/cart" component={ Cart}/>
       </Switch> 
     )
 }
